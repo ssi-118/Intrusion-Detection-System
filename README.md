@@ -168,3 +168,8 @@ with:
 ```text
 python-3.11
 ```
+## Live Demo
+
+```
+https://intrusion-detection-system-bszzywwlc7mct2x4aihhs6.streamlit.app/
+```
