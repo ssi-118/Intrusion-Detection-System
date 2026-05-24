@@ -1,0 +1,36 @@
+# Virtual environments
+.venv/
+venv/
+env/
+venv311/
+
+# Python cache and build output
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Streamlit and local secrets
+.streamlit/secrets.toml
+
+# Large/raw datasets
+data/
+*.zip
+*.arff
+KDDTrain*.txt
+KDDTest*.txt
+
+# Generated model artifacts
+artifacts/
+*.pkl
+*.joblib
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
