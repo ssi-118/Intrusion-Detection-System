@@ -80,6 +80,8 @@ After threshold tuning, threshold `0.1` improved recall:
 
 ```text
 IDS/
+├── assets/
+│   └── IDS.ipynb
 ├── artifacts/
 │   ├── ids_deployment_artifact.pkl
 │   ├── pipeline.pkl
