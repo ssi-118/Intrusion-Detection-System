@@ -1,0 +1,41 @@
+[
+  {
+    "model": "xgboost",
+    "accuracy": 0.791208303761533,
+    "precision": 0.9683033656062702,
+    "recall": 0.6546403802696174,
+    "f1": 0.781161374308429,
+    "false_positive_rate": 0.028318401812377717,
+    "true_positives": 8401,
+    "true_negatives": 9436,
+    "false_positives": 275,
+    "false_negatives": 4432,
+    "roc_auc": 0.9651220394067103
+  },
+  {
+    "model": "random_forest",
+    "accuracy": 0.7822480482611781,
+    "precision": 0.9690977977740942,
+    "recall": 0.6378087742538767,
+    "f1": 0.7693030687532308,
+    "false_positive_rate": 0.026876737720111215,
+    "true_positives": 8185,
+    "true_negatives": 9450,
+    "false_positives": 261,
+    "false_negatives": 4648,
+    "roc_auc": 0.9617466322741407
+  },
+  {
+    "model": "logistic_regression",
+    "accuracy": 0.7452980837473385,
+    "precision": 0.9132766056649959,
+    "recall": 0.6105353385802229,
+    "f1": 0.7318326172239865,
+    "false_positive_rate": 0.07661414890330553,
+    "true_positives": 7835,
+    "true_negatives": 8967,
+    "false_positives": 744,
+    "false_negatives": 4998,
+    "roc_auc": 0.7915450351357778
+  }
+]

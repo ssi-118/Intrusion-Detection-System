@@ -25,11 +25,6 @@ data/
 KDDTrain*.txt
 KDDTest*.txt
 
-# Generated model artifacts
-artifacts/
-*.pkl
-*.joblib
-
 # OS and editor files
 .DS_Store
 Thumbs.db
