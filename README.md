@@ -87,6 +87,8 @@ IDS/
 │   ├── pipeline.pkl
 │   ├── metrics.json
 │   └── threshold_metrics.json
+├── docs/
+│   └── IDS_IP_OP.docx
 ├── src/
 │   ├── ids/
 │   │   ├── config.py
