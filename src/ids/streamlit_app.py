@@ -53,7 +53,6 @@ st.markdown(
                 Scan NSL-KDD traffic logs, detect suspicious records, and review threat probability in one dashboard.
             </p>
         </div>
-        <div class="status-pill">Model Ready</div>
     </div>
     """,
     unsafe_allow_html=True

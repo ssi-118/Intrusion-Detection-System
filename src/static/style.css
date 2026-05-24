@@ -9,6 +9,12 @@
     --teal: #0f766e;
     --teal-bright: #14b8a6;
     --teal-soft: #ccfbf1;
+    --sky: #0ea5e9;
+    --sky-soft: #e0f2fe;
+    --violet: #7c3aed;
+    --violet-soft: #ede9fe;
+    --lime: #65a30d;
+    --lime-soft: #ecfccb;
     --red: #dc2626;
     --red-soft: #fee2e2;
     --amber: #f59e0b;
@@ -17,7 +23,9 @@
 
 .stApp {
     background:
-        linear-gradient(180deg, rgba(204, 251, 241, 0.36) 0, rgba(246, 248, 251, 0) 260px),
+        radial-gradient(circle at 12% 0%, rgba(20, 184, 166, 0.20), transparent 28%),
+        radial-gradient(circle at 90% 4%, rgba(124, 58, 237, 0.14), transparent 24%),
+        linear-gradient(180deg, rgba(224, 242, 254, 0.74) 0, rgba(246, 248, 251, 0) 300px),
         var(--bg);
 }
 
@@ -56,7 +64,7 @@
     position: absolute;
     inset: 0 0 auto 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--teal-bright), #38bdf8, var(--amber));
+    background: linear-gradient(90deg, var(--teal-bright), var(--sky), var(--violet), var(--amber));
 }
 
 .hero h1 {
@@ -191,9 +199,22 @@
 [data-testid="stMetric"] {
     background: var(--surface);
     border: 1px solid var(--line);
+    border-top: 4px solid var(--teal-bright);
     padding: 0.95rem 1rem;
     border-radius: 8px;
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+div[data-testid="column"]:nth-of-type(2) [data-testid="stMetric"] {
+    border-top-color: var(--lime);
+}
+
+div[data-testid="column"]:nth-of-type(3) [data-testid="stMetric"] {
+    border-top-color: var(--red);
+}
+
+div[data-testid="column"]:nth-of-type(4) [data-testid="stMetric"] {
+    border-top-color: var(--violet);
 }
 
 [data-testid="stMetricLabel"] {
@@ -208,13 +229,13 @@
     padding: 1rem;
     border: 1px solid var(--line);
     border-radius: 8px;
-    background: var(--surface);
+    background: linear-gradient(135deg, var(--surface), #f0fdfa 55%, var(--sky-soft));
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
 }
 
 [data-testid="stFileUploaderDropzone"] {
-    border: 1px dashed #5eead4;
-    background: #f0fdfa;
+    border: 1px dashed #38bdf8;
+    background: rgba(255, 255, 255, 0.78);
     border-radius: 8px;
 }
 
@@ -230,7 +251,7 @@
 }
 
 .stTabs [aria-selected="true"] {
-    background: var(--surface);
+    background: linear-gradient(180deg, #ffffff, #f0fdfa);
     color: var(--teal);
     border: 1px solid var(--line);
     border-bottom-color: var(--surface);
@@ -245,10 +266,15 @@
 
 [data-testid="stPlotlyChart"] {
     border: 1px solid var(--line);
+    border-top: 4px solid var(--sky);
     border-radius: 8px;
     padding: 0.75rem;
     background: var(--surface);
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+}
+
+[data-testid="stPlotlyChart"]:nth-of-type(even) {
+    border-top-color: var(--violet);
 }
 
 .stDownloadButton button,
